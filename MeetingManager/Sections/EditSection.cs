@@ -17,6 +17,7 @@ namespace MeetingManager.Sections
         public void Handle(Context context)
         {
             var meetingService = context.MeetingService;
+            var notificationService = context.NotificationService;
             var pattern = "dd.MM.yyyy HH:mm";
             var notificationTime = -1; 
             DateTime startTime = new DateTime();
@@ -61,6 +62,8 @@ namespace MeetingManager.Sections
 
             if (_meeting.Id == 0)
                 meetingService.Add(_meeting);
+            
+            notificationService.Add(_meeting);
             
             context.Section = new DetailsSection(_meeting);
             context.Request();
