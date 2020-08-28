@@ -19,23 +19,25 @@ namespace MeetingManager.Sections
         private void OpenScheduleSection()
         {
             _context.Section = new ScheduleSection();
+            _context.Request();
         }
 
         private void OpenEditSection()
         {
             _context.Section = new EditSection(new Meeting());
+            _context.Request();
         }
         
         private void OpenExportSection()
         {
             _context.Section = new ExportSection();
+            _context.Request();
         }
 
         public void Handle(Context context)
         {
             _context = context;
             _menu.Print();
-            _context.Request();
         }
     }
 }

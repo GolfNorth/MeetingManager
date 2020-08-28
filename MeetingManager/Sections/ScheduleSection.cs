@@ -24,23 +24,24 @@ namespace MeetingManager.Sections
             menu.Add(new MenuItem(++order, "Добавить встречу", OpenEditSection));
             menu.Add(new MenuItem(++order, "Главное меню", OpenMainSection));
             menu.Print();
-            
-            context.Request();
         }
 
         private void OpenMainSection()
         {
             _context.Section = new MainSection();
+            _context.Request();
         }
         
         private void OpenEditSection()
         {
             _context.Section = new EditSection(new Meeting());
+            _context.Request();
         }
 
         private void OpenDetailsSection(Meeting meeting)
         {
             _context.Section = new DetailsSection(meeting);
+            _context.Request();
         }
     }
 }

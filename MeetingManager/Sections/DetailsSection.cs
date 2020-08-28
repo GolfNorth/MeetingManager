@@ -31,7 +31,6 @@ namespace MeetingManager.Sections
             menu.Add(new MenuItem(3, "К списку встреч", OpenScheduleSection));
             
             menu.Print();
-            context.Request();
         }
 
         private void RemoveMeeting()
@@ -43,11 +42,13 @@ namespace MeetingManager.Sections
         private void OpenScheduleSection()
         {
             _context.Section = new ScheduleSection();
+            _context.Request();
         }
         
         private void OpenEditSection()
         {
             _context.Section = new EditSection(_meeting);
+            _context.Request();
         }
     }
 }
