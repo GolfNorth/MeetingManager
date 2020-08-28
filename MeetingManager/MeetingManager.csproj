@@ -49,6 +49,7 @@
         <Compile Include="Sections\MainSection.cs" />
         <Compile Include="Sections\ScheduleSection.cs" />
         <Compile Include="Services\ExportService.cs" />
+        <Compile Include="Services\MeetingService.cs" />
         <Compile Include="Services\NotificationService.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
