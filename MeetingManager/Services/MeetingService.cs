@@ -26,11 +26,6 @@ namespace MeetingManager.Services
             return _items;
         }
 
-        public Meeting GetById(int id)
-        {
-            return _items.FirstOrDefault(item => item.Id == id);
-        }
-
         public int Add(Meeting item)
         {
             if (item is null) throw new ArgumentNullException(nameof(item));
@@ -44,14 +39,22 @@ namespace MeetingManager.Services
             return item.Id;
         }
 
-        public Meeting Remove(int id)
+        public bool Remove(Meeting meeting)
         {
-            var item = GetById(id);
+            return _items.Remove(meeting);
+        }
 
-            if (item != null)
-                _items.Remove(item);
-
-            return item;
+        public bool CheckFreeTime(DateTime startTime, DateTime endTime)
+        {
+            foreach (var meeting in _items)
+            {
+                if ((startTime > meeting.StartTime && startTime < meeting.EndTime) ||
+                    (endTime > meeting.StartTime && endTime < meeting.EndTime) ||
+                    (startTime < meeting.StartTime && endTime > meeting.EndTime))
+                    return false;
+            }
+            
+            return true;
         }
     }
 }

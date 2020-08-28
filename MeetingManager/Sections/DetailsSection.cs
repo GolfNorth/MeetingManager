@@ -36,7 +36,7 @@ namespace MeetingManager.Sections
 
         private void RemoveMeeting()
         {
-            _context.MeetingService.Remove(_meeting.Id);
+            _context.MeetingService.Remove(_meeting);
             OpenScheduleSection();
         }
 

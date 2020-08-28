@@ -31,15 +31,25 @@ namespace MeetingManager.Sections
                 _meeting.Text = Console.ReadLine();
             } while (String.IsNullOrWhiteSpace(_meeting.Text));
 
-            do
+            while (true)
             {
-                Console.Write("Введите время и дату начала встречи (дд.мм.гггг чч:мм): ");
-            } while (!(DateTime.TryParseExact(Console.ReadLine(), pattern, null, DateTimeStyles.None, out startTime) && startTime > DateTime.Now));
+                do
+                {
+                    Console.Write("Введите время и дату начала встречи (дд.мм.гггг чч:мм): ");
+                } while (!(DateTime.TryParseExact(Console.ReadLine(), pattern, null, DateTimeStyles.None,
+                    out startTime) && startTime > DateTime.Now));
 
-            do
-            {
-                Console.Write("Введите время и дату окончания встречи (дд.мм.гггг чч:мм): ");
-            } while (!(DateTime.TryParseExact(Console.ReadLine(), pattern, null, DateTimeStyles.None, out endTime) && endTime > startTime));
+                do
+                {
+                    Console.Write("Введите время и дату окончания встречи (дд.мм.гггг чч:мм): ");
+                } while (!(DateTime.TryParseExact(Console.ReadLine(), pattern, null, DateTimeStyles.None,
+                    out endTime) && endTime > startTime));
+                
+                if (meetingService.CheckFreeTime(startTime, endTime))
+                    break;
+                
+                Console.WriteLine("Время пересекается с другими встречами");
+            }
 
             do
             {
