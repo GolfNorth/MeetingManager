@@ -6,15 +6,25 @@ using MeetingManager.Classes;
 
 namespace MeetingManager.Services
 {
+    /// <summary>
+    /// Сервис оповещения о предстоящих встреч
+    /// </summary>
     public sealed class NotificationService
     {
         private readonly Dictionary<Meeting, CancellationTokenSource> _cancellationTokens;
 
+        /// <summary>
+        /// Конструктор сервиса оповещений
+        /// </summary>
         public NotificationService()
         {
             _cancellationTokens = new Dictionary<Meeting, CancellationTokenSource>();
         }
 
+        /// <summary>
+        /// Метод создания оповещения встречи
+        /// </summary>
+        /// <param name="meeting">Объект встречи</param>
         public void Add(Meeting meeting)
         {
             if (_cancellationTokens.ContainsKey(meeting))
@@ -40,6 +50,10 @@ namespace MeetingManager.Services
             _cancellationTokens.Add(meeting, source);
         }
 
+        /// <summary>
+        /// Метод удаления встречи
+        /// </summary>
+        /// <param name="meeting">Объект встречи</param>
         public void Remove(Meeting meeting)
         {
             if (!_cancellationTokens.ContainsKey(meeting)) return;

@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace MeetingManager.Classes
 {
+    /// <summary>
+    /// Класс меню
+    /// </summary>
     public sealed class Menu
     {
         private List<MenuItem> _menuItems;
@@ -14,6 +17,10 @@ namespace MeetingManager.Classes
             _menuItems = new List<MenuItem>();
         }
 
+        /// <summary>
+        /// Добавление пункта меню
+        /// </summary>
+        /// <param name="menuItem">Объект пункта меню</param>
         public void Add(MenuItem menuItem)
         {
             if (_menuItems.Contains(menuItem)) return;
@@ -21,6 +28,10 @@ namespace MeetingManager.Classes
             _menuItems.Add(menuItem);
         }
 
+        /// <summary>
+        /// Удаление пункта меню
+        /// </summary>
+        /// <param name="menuItem">Пункт меню</param>
         public void Remove(MenuItem menuItem)
         {
             if (!_menuItems.Contains(menuItem)) return;
@@ -28,6 +39,9 @@ namespace MeetingManager.Classes
             _menuItems.Remove(menuItem);
         }
 
+        /// <summary>
+        /// Метод вывода меню и обработки выбора
+        /// </summary>
         public void Print()
         {
             var sortedMenu = _menuItems.OrderBy(item => item.Order).ToArray();
@@ -44,7 +58,7 @@ namespace MeetingManager.Classes
                 int.TryParse(Console.ReadLine(), out choice);
             }
             
-            sortedMenu[choice - 1].Action.Invoke();
+            sortedMenu[choice - 1].Action?.Invoke();
         }
     }
 }

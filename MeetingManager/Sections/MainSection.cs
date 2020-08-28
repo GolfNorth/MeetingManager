@@ -3,11 +3,17 @@ using MeetingManager.Interfaces;
 
 namespace MeetingManager.Sections
 {
+    /// <summary>
+    /// Секция главного экрана
+    /// </summary>
     public sealed class MainSection : ISection
     {
         private readonly Menu _menu;
         private Context _context;
 
+        /// <summary>
+        /// Секция главного экрана
+        /// </summary>
         public MainSection()
         {
             _menu = new Menu();

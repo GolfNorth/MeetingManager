@@ -5,10 +5,17 @@ using MeetingManager.Interfaces;
 
 namespace MeetingManager.Sections
 {
+    /// <summary>
+    /// Секция редактирования встречи
+    /// </summary>
     public sealed class EditSection : ISection
     {
         private readonly Meeting _meeting;
 
+        /// <summary>
+        /// Секция редактирования встречи
+        /// </summary>
+        /// <param name="meeting">Объект встречи</param>
         public EditSection(Meeting meeting)
         {
             _meeting = meeting;

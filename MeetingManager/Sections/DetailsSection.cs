@@ -4,11 +4,18 @@ using MeetingManager.Interfaces;
 
 namespace MeetingManager.Sections
 {
+    /// <summary>
+    /// Секция подробной информации о встрече
+    /// </summary>
     public sealed class DetailsSection : ISection
     {
         private readonly Meeting _meeting;
         private Context _context;
 
+        /// <summary>
+        /// Секция подробной информации о встрече
+        /// </summary>
+        /// <param name="meeting">Объект встречи</param>
         public DetailsSection(Meeting meeting)
         {
             _meeting = meeting;
@@ -32,7 +39,7 @@ namespace MeetingManager.Sections
             
             menu.Print();
         }
-
+        
         private void RemoveMeeting()
         {
             _context.MeetingService.Remove(_meeting);

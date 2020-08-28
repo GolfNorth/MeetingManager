@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using System.IO;
 using MeetingManager.Classes;
 using MeetingManager.Interfaces;
 
 namespace MeetingManager.Sections
 {
+    /// <summary>
+    /// Секция экспорта встреч в файл
+    /// </summary>
     public sealed class ExportSection : ISection
     {
         private Context _context;

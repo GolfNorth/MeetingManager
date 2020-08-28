@@ -5,8 +5,17 @@ using MeetingManager.Classes;
 
 namespace MeetingManager.Services
 {
+    /// <summary>
+    /// Сервис экспорта встреч в файл
+    /// </summary>
     public sealed class ExportService
     {
+        /// <summary>
+        /// Метод экспорта встреч в файл
+        /// </summary>
+        /// <param name="date">Дата встреч</param>
+        /// <param name="meetings">Коллекция встреч</param>
+        /// <returns></returns>
         public string ExportToFile(DateTime date, IEnumerable<Meeting> meetings)
         {
             var fileName = $"Meetings_{date:dd.MM.yyyy}.txt";

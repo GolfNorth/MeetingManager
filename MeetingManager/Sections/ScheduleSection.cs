@@ -4,6 +4,9 @@ using MeetingManager.Interfaces;
 
 namespace MeetingManager.Sections
 {
+    /// <summary>
+    /// Секция расписания встреч
+    /// </summary>
     public sealed class ScheduleSection : ISection
     {
         private Context _context;
