@@ -12,6 +12,13 @@ namespace MeetingManager.Services
         public MeetingService(List<Meeting> items = null)
         {
             _items = items ?? new List<Meeting>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                var meeting = new Meeting();
+                meeting.Text = $"Meeting_{i}";
+                Add(meeting);
+            }
         }
 
         public IEnumerable<Meeting> GetAll()

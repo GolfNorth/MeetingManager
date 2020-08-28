@@ -11,22 +11,22 @@ namespace MeetingManager.Sections
         public MainSection()
         {
             _menu = new Menu();
-            _menu.Add(new MenuItem(0, "Список встреч", OpenSchedule));
-            _menu.Add(new MenuItem(1, "Добавить встречу", AddMeeting));
-            _menu.Add(new MenuItem(2, "Экспортировать в файл", ExportToFile));
+            _menu.Add(new MenuItem(0, "Список встреч", OpenScheduleSection));
+            _menu.Add(new MenuItem(1, "Добавить встречу", OpenEditSection));
+            _menu.Add(new MenuItem(2, "Экспортировать в файл", OpenExportSection));
         }
 
-        private void OpenSchedule()
+        private void OpenScheduleSection()
         {
             _context.Section = new ScheduleSection();
         }
 
-        private void AddMeeting()
+        private void OpenEditSection()
         {
-            _context.Section = new EditSection();
+            _context.Section = new EditSection(new Meeting());
         }
         
-        private void ExportToFile()
+        private void OpenExportSection()
         {
             _context.Section = new ExportSection();
         }
@@ -35,6 +35,7 @@ namespace MeetingManager.Sections
         {
             _context = context;
             _menu.Print();
+            _context.Request();
         }
     }
 }

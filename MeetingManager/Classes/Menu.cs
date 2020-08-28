@@ -10,6 +10,7 @@ namespace MeetingManager.Classes
 
         public Menu()
         {
+            Console.Clear();
             _menuItems = new List<MenuItem>();
         }
 
