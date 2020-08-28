@@ -25,13 +25,16 @@ namespace MeetingManager.Services
             if (notificationTime < DateTime.Now) return;
             
             var source = new CancellationTokenSource();
-            var delay = DateTime.Now - notificationTime;
+            var delay = notificationTime - DateTime.Now;
+            
+            Console.WriteLine(notificationTime);
+            Console.WriteLine(delay);
 
             Task.Run(async delegate
             {
                 await Task.Delay(delay, source.Token);
-                Console.WriteLine("Внимание!");
-                Console.WriteLine($"{meeting.Text} начнется в {meeting.StartTime:HH:mm}");
+                Console.WriteLine("\nВнимание!");
+                Console.WriteLine($"{meeting.Text} начнется в {meeting.StartTime:HH:mm}\n");
             }, source.Token);
             
             _cancellationTokens.Add(meeting, source);

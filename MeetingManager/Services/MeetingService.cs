@@ -12,17 +12,6 @@ namespace MeetingManager.Services
         public MeetingService(List<Meeting> items = null)
         {
             _items = items ?? new List<Meeting>();
-
-            for (int i = 0; i < 10; i++)
-            {
-                var meeting = new Meeting
-                {
-                    Text = $"Meeting_{i}",
-                    StartTime = DateTime.Now + TimeSpan.FromDays(i),
-                    EndTime = DateTime.Now + TimeSpan.FromHours(3)
-                };
-                Add(meeting);
-            }
         }
 
         public IEnumerable<Meeting> GetAll()
