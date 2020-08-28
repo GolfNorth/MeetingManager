@@ -9,10 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="162cdb27-a4d1-44a1-9b1c-519f2f6e322c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MeetingManager/Services/MeetingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeetingManager/Classes/Menu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MeetingManager/Classes/MenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeetingManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeetingManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeetingManager/Classes/Meeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingManager/Classes/Meeting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeetingManager/MeetingManager.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingManager/MeetingManager.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetingManager/Sections/MainSection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingManager/Sections/MainSection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Classes/Context.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/ExportSection.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -37,7 +39,6 @@
         <option value="$PROJECT_DIR$/MeetingManager/Interfaces/ISection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Sections/DetailsSection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Sections/EditSection.cs" />
-        <option value="$PROJECT_DIR$/MeetingManager/Sections/MainSection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Sections/ScheduleSection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Context.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Services/ScheduleService.cs" />
@@ -45,10 +46,13 @@
         <option value="$PROJECT_DIR$/MeetingManager/Services/NotificationService.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Classes.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Program.cs" />
-        <option value="$PROJECT_DIR$/MeetingManager/Classes/Context.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Sections/ExportSection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Classes/Meeting.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Services/MeetingService.cs" />
+        <option value="$PROJECT_DIR$/MeetingManager/Classes/Context.cs" />
+        <option value="$PROJECT_DIR$/MeetingManager/Classes/Menu.cs" />
+        <option value="$PROJECT_DIR$/MeetingManager/Classes/MenuItem.cs" />
+        <option value="$PROJECT_DIR$/MeetingManager/Sections/MainSection.cs" />
       </list>
     </option>
   </component>
@@ -91,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598554028314</updated>
-      <workItem from="1598554042007" duration="4385000" />
+      <workItem from="1598554042007" duration="6705000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1598554079994</created>
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598558086495</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added new service. Context logic reedited.">
+      <created>1598632631913</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598632631913</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +148,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init commit" />
     <MESSAGE value="Basic files structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic files structure" />
+    <MESSAGE value="Added new service. Context logic reedited." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new service. Context logic reedited." />
   </component>
 </project>

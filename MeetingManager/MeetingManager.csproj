@@ -40,6 +40,8 @@
     <ItemGroup>
         <Compile Include="Classes\Context.cs" />
         <Compile Include="Classes\Meeting.cs" />
+        <Compile Include="Classes\Menu.cs" />
+        <Compile Include="Classes\MenuItem.cs" />
         <Compile Include="Interfaces\ISection.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
