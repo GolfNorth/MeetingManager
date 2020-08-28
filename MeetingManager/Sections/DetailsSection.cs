@@ -49,13 +49,13 @@ namespace MeetingManager.Sections
 
         private void OpenScheduleSection()
         {
-            _context.Section = new ScheduleSection();
+            _context.Section = SectionFactory.ScheduleSection();
             _context.Request();
         }
         
         private void OpenEditSection()
         {
-            _context.Section = new EditSection(_meeting);
+            _context.Section = SectionFactory.EditSection(_meeting);
             _context.Request();
         }
     }

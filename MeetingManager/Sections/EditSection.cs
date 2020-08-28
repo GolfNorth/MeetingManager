@@ -72,7 +72,7 @@ namespace MeetingManager.Sections
             
             notificationService.Add(_meeting);
             
-            context.Section = new DetailsSection(_meeting);
+            context.Section = SectionFactory.DetailsSection(_meeting);
             context.Request();
         }
     }

@@ -1,4 +1,5 @@
-﻿using MeetingManager.Classes;
+﻿using System;
+using MeetingManager.Classes;
 using MeetingManager.Interfaces;
 
 namespace MeetingManager.Sections
@@ -24,25 +25,27 @@ namespace MeetingManager.Sections
 
         private void OpenScheduleSection()
         {
-            _context.Section = new ScheduleSection();
+            _context.Section = SectionFactory.ScheduleSection();
             _context.Request();
         }
 
         private void OpenEditSection()
         {
-            _context.Section = new EditSection(new Meeting());
+            _context.Section = SectionFactory.EditSection(new Meeting());
             _context.Request();
         }
         
         private void OpenExportSection()
         {
-            _context.Section = new ExportSection();
+            _context.Section = SectionFactory.ExportSection();
             _context.Request();
         }
 
         public void Handle(Context context)
         {
             _context = context;
+            
+            Console.Clear();
             _menu.Print();
         }
     }

@@ -7,7 +7,7 @@ namespace MeetingManager
     {
         public static void Main(string[] args)
         {
-            var context = new Context(new MainSection());
+            var context = new Context(SectionFactory.MainSection());
             context.Request();
         }
     }

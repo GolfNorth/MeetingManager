@@ -50,6 +50,7 @@
         <Compile Include="Sections\ExportSection.cs" />
         <Compile Include="Sections\MainSection.cs" />
         <Compile Include="Sections\ScheduleSection.cs" />
+        <Compile Include="Sections\SectionFactory.cs" />
         <Compile Include="Services\ExportService.cs" />
         <Compile Include="Services\MeetingService.cs" />
         <Compile Include="Services\NotificationService.cs" />

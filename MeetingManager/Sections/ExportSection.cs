@@ -58,7 +58,7 @@ namespace MeetingManager.Sections
         
         private void OpenMainSection()
         {
-            _context.Section = new MainSection();
+            _context.Section = SectionFactory.MainSection();
             _context.Request();
         }
     }

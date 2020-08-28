@@ -31,19 +31,19 @@ namespace MeetingManager.Sections
 
         private void OpenMainSection()
         {
-            _context.Section = new MainSection();
+            _context.Section = SectionFactory.MainSection();
             _context.Request();
         }
         
         private void OpenEditSection()
         {
-            _context.Section = new EditSection(new Meeting());
+            _context.Section = SectionFactory.EditSection(new Meeting());
             _context.Request();
         }
 
         private void OpenDetailsSection(Meeting meeting)
         {
-            _context.Section = new DetailsSection(meeting);
+            _context.Section = SectionFactory.DetailsSection(meeting);
             _context.Request();
         }
     }
