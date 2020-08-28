@@ -17,7 +17,8 @@ namespace MeetingManager.Sections
 
             foreach (var meeting in meetingService.GetAll().OrderBy(meeting => meeting.StartTime))
             {
-                menu.Add(new MenuItem(++order, meeting.Text, () => { OpenDetailsSection(meeting); }));
+                var text = $"{meeting.StartTime:dd.MM.yyyy HH:mm} - {meeting.EndTime:dd.MM.yyyy HH:mm}\n{meeting.Text}";
+                menu.Add(new MenuItem(++order, text, () => { OpenDetailsSection(meeting); }));
             }
             
             menu.Add(new MenuItem(++order, "Добавить встречу", OpenEditSection));

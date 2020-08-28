@@ -10,7 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="162cdb27-a4d1-44a1-9b1c-519f2f6e322c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MeetingManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MeetingManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeetingManager/Sections/EditSection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingManager/Sections/EditSection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetingManager/Sections/DetailsSection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingManager/Sections/DetailsSection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetingManager/Sections/ScheduleSection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingManager/Sections/ScheduleSection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeetingManager/Services/MeetingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingManager/Services/MeetingService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +24,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/DetailsSection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/EditSection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/MainSection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Services/MeetingService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Classes/Context.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/MainSection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/EditSection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Services/MeetingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/DetailsSection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/EditSection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Vadim/Development/CSharp/MeetingManager/MeetingManager/Sections/ExportSection.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -49,10 +56,10 @@
         <option value="$PROJECT_DIR$/MeetingManager/Classes/MenuItem.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Classes/Meeting.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Sections/MainSection.cs" />
-        <option value="$PROJECT_DIR$/MeetingManager/Sections/ScheduleSection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Classes/Menu.cs" />
-        <option value="$PROJECT_DIR$/MeetingManager/Sections/DetailsSection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Sections/EditSection.cs" />
+        <option value="$PROJECT_DIR$/MeetingManager/Sections/DetailsSection.cs" />
+        <option value="$PROJECT_DIR$/MeetingManager/Sections/ScheduleSection.cs" />
         <option value="$PROJECT_DIR$/MeetingManager/Services/MeetingService.cs" />
       </list>
     </option>
@@ -96,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598554028314</updated>
-      <workItem from="1598554042007" duration="13176000" />
+      <workItem from="1598554042007" duration="14742000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1598554079994</created>
@@ -147,7 +154,35 @@
       <option name="project" value="LOCAL" />
       <updated>1598639876917</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Check free time added">
+      <created>1598641172289</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598641172289</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Check free time added">
+      <created>1598641207711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1598641207711</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Check free time added">
+      <created>1598641236847</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598641236847</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Check free time added">
+      <created>1598641258255</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598641258255</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,28 +208,29 @@
     <MESSAGE value="Added new service. Context logic reedited." />
     <MESSAGE value="Menu added" />
     <MESSAGE value="Added some basic functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some basic functional" />
+    <MESSAGE value="Check free time added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check free time added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598638430589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1598638430589" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1598640721193">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1598642660213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598640721193" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1598640721192">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598642660213" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1598642660213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598640721192" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1598640721192">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598642660213" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1598642660213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598640721192" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1598640721192">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598642660213" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1598642660213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598640721192" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598642660213" />
   </component>
 </project>

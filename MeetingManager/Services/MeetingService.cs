@@ -15,8 +15,12 @@ namespace MeetingManager.Services
 
             for (int i = 0; i < 10; i++)
             {
-                var meeting = new Meeting();
-                meeting.Text = $"Meeting_{i}";
+                var meeting = new Meeting
+                {
+                    Text = $"Meeting_{i}",
+                    StartTime = DateTime.Now + TimeSpan.FromDays(i),
+                    EndTime = DateTime.Now + TimeSpan.FromHours(3)
+                };
                 Add(meeting);
             }
         }
@@ -24,6 +28,11 @@ namespace MeetingManager.Services
         public IEnumerable<Meeting> GetAll()
         {
             return _items;
+        }
+        
+        public IEnumerable<Meeting> GetAll(DateTime date)
+        {
+            return _items.Where(meeting => meeting.StartTime.Year == date.Year && meeting.StartTime.Month == date.Month && meeting.StartTime.Day == date.Day);
         }
 
         public int Add(Meeting item)

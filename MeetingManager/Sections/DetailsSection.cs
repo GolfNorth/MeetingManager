@@ -22,8 +22,8 @@ namespace MeetingManager.Sections
             
             Console.WriteLine(_meeting.Text);
             Console.WriteLine($"Id: {_meeting.Id}");
-            Console.WriteLine($"Начало встречи: {_meeting.StartTime}");
-            Console.WriteLine($"Окончание встречи: {_meeting.EndTime}");
+            Console.WriteLine($"Начало встречи: {_meeting.StartTime:dd.MM.yyyy HH:mm}");
+            Console.WriteLine($"Окончание встречи: {_meeting.EndTime:dd.MM.yyyy HH:mm}");
             Console.WriteLine($"Напомнить за {_meeting.NotificationTime:%m} минут(ы)");
             
             menu.Add(new MenuItem(1, "Удалить встречу", RemoveMeeting));
