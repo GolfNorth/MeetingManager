@@ -69,13 +69,15 @@ namespace MeetingManager.Services
             return _items.Remove(meeting);
         }
 
-        public bool CheckFreeTime(DateTime startTime, DateTime endTime)
+        public bool CheckFreeTime(Meeting checkedMeeting)
         {
             foreach (var meeting in _items)
             {
-                if ((startTime > meeting.StartTime && startTime < meeting.EndTime) ||
-                    (endTime > meeting.StartTime && endTime < meeting.EndTime) ||
-                    (startTime < meeting.StartTime && endTime > meeting.EndTime))
+                if (checkedMeeting == meeting) continue;
+                
+                if ((checkedMeeting.StartTime > meeting.StartTime && checkedMeeting.StartTime < meeting.EndTime) ||
+                    (checkedMeeting.EndTime > meeting.StartTime && checkedMeeting.EndTime < meeting.EndTime) ||
+                    (checkedMeeting.StartTime < meeting.StartTime && checkedMeeting.EndTime > meeting.EndTime))
                     return false;
             }
             
